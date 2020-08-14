@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Object Oriented Programming with VBA</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/highlight/styles/default.css">
+	<script src="assets/highlight/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body class="single is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">Wenjing's Blog</a></h1>
+		</header>
+
+		<!-- Menu -->
+
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="#">Writing Classes in VBA</a></h2>
+						<p>A simple showcase of VBA class construction</p>
+					</div>
+					<div class="meta">
+						<time class="published" datetime="2019-12-09">December 9, 2019</time>
+						<a href="index.html" class="author"><span class="name">Wenjing Fang</span><img
+								src="images/avatar.jpg" alt="" /></a>
+					</div>
+				</header>
+				<span class="image featured"><img src="images/ExcelSpreadsheet.jpg" alt="" /></span>
+				<p>This post demonstrates how to create a simple class in VBA and to use it in the regular modules.
+					Classes allows to package different properties and methods into a reusable “container”. It is
+					extremely useful when the program constantly calling these methods/properties.
+					This example will create a ADO database class which allows to connect to a MSSQL database. Consider
+					this as an extension to the default ADODB class.
+				</p>
+				<h6>0.Prerequisite</h6>
+				<p> The following references must be checked in VBA so that the sample coding can be run
+					without errors:</p>
+				<li>Microsoft ActiveX Data Objects Recordset 2.x Library</li>
+				<li>Microsoft ActiveX Data Objects 2.0 Library</li>
+				<li>Microsoft ADO Ext. 2.x for DLL and Security</li>
+				<h6>1.Declare the variables</h6>
+				<p>you gonna use inside the class module. Since we only want these variables to be recognized within
+					this class. We will declare them to be Private.</p>
+				<pre><code >Option Explicit
+Private conn as ADODB.connection
+Private dbName as String</code></pre>
+
+
+				<footer>
+					<ul class="stats">
+						<li><a href="#">General</a></li>
+						<li><a href="#" class="icon solid fa-heart">28</a></li>
+						<li><a href="#" class="icon solid fa-comment">128</a></li>
+					</ul>
+				</footer>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a
+					href="http://unsplash.com">Unsplash</a>.</p>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
