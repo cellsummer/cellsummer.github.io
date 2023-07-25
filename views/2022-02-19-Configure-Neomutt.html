@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Configure Terminal Email Client: Neomutt | Wenjing&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Welcome to my Vuepress Blog Site! Check out my Github for the source code.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.4207f5fc.css" as="style"><link rel="preload" href="/assets/js/app.c2013288.js" as="script"><link rel="preload" href="/assets/js/3.89e8bd5b.js" as="script"><link rel="preload" href="/assets/js/1.6fc59a91.js" as="script"><link rel="preload" href="/assets/js/25.054561ac.js" as="script"><link rel="prefetch" href="/assets/js/10.1fe5794d.js"><link rel="prefetch" href="/assets/js/11.d60d5932.js"><link rel="prefetch" href="/assets/js/12.93e37cab.js"><link rel="prefetch" href="/assets/js/13.a8f8b45b.js"><link rel="prefetch" href="/assets/js/14.0762bf92.js"><link rel="prefetch" href="/assets/js/15.86aed01d.js"><link rel="prefetch" href="/assets/js/16.0cf52093.js"><link rel="prefetch" href="/assets/js/17.f15cd292.js"><link rel="prefetch" href="/assets/js/18.5506ab3a.js"><link rel="prefetch" href="/assets/js/19.c031ce80.js"><link rel="prefetch" href="/assets/js/20.4ca8ce32.js"><link rel="prefetch" href="/assets/js/21.9e85f937.js"><link rel="prefetch" href="/assets/js/22.fbe1ca34.js"><link rel="prefetch" href="/assets/js/23.c0ba242b.js"><link rel="prefetch" href="/assets/js/24.39087986.js"><link rel="prefetch" href="/assets/js/26.610a6a80.js"><link rel="prefetch" href="/assets/js/27.c4bffb1f.js"><link rel="prefetch" href="/assets/js/28.be3e0761.js"><link rel="prefetch" href="/assets/js/29.00e69056.js"><link rel="prefetch" href="/assets/js/4.471faa12.js"><link rel="prefetch" href="/assets/js/5.d887c88f.js"><link rel="prefetch" href="/assets/js/6.0d4a3552.js"><link rel="prefetch" href="/assets/js/7.c5fc8b99.js"><link rel="prefetch" href="/assets/js/8.8fbdee77.js"><link rel="prefetch" href="/assets/js/9.9eff6f5e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4207f5fc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Wenjing's Blog</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>Welcome to my Vuepress Blog Site! Check out my Github for the source code.</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Wenjing Fang</span>
+            
+          <!---->
+          2023
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Wenjing's Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Notes/" class="nav-link"><i class="undefined"></i>
+  Notes
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Travel/" class="nav-link"><i class="undefined"></i>
+  Travel
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Life/" class="nav-link"><i class="undefined"></i>
+  Life
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="mailto: fang.wenjing@yahoo.com" class="nav-link external"><i class="iconfont reco-mail"></i>
+  Email
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/cellsummer/vuepress-deploy" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/image/me.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    Wenjing Fang
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>15</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>23</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Notes/" class="nav-link"><i class="undefined"></i>
+  Notes
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Travel/" class="nav-link"><i class="undefined"></i>
+  Travel
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Life/" class="nav-link"><i class="undefined"></i>
+  Life
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="mailto: fang.wenjing@yahoo.com" class="nav-link external"><i class="iconfont reco-mail"></i>
+  Email
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/cellsummer/vuepress-deploy" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Configure Terminal Email Client: Neomutt</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Wenjing Fang</span>
+            
+          <!---->
+          2023
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">Configure Terminal Email Client: Neomutt</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>Wenjing Fang</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2/18/2022</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>Mutt</span><span class="tag-item" data-v-1ff7123e>Programming</span></i></div></div> <div class="theme-reco-content content__default"><div class="custom-block tip"><p class="title"></p><p>This post documents how I set up the terminal based email client (Neo)mutt</p></div> <h2 id="background"><a href="#background" class="header-anchor">#</a> Background</h2> <p><a href="http://www.mutt.org/" target="_blank" rel="noopener noreferrer">Mutt<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> or <a href="https://neomutt.org/" target="_blank" rel="noopener noreferrer">Neomutt<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> is a terminal based email client. It is a well received terminal application primarily for Linux systems. Although there are many great Email applications with lood-looking graphic designs in various Linux distros (e.g. Thunderbird which is pre-installed in my Manjaro Distro), many people would still prefer an old-school terminal based application for the emails. The reasons people may choose a terminal based applications over a GUI applications are:</p> <ul><li>Speed: Without loading all graphic components, terminal based application usually has better performance and is more responsive.</li> <li>Configurability: Many terminal based applications are usually very configurable. And the configurations are just kept jin one or a few dot files, which makes it extremely easy to sync among different machines.</li> <li>Better workflow integration: When working in a Linux world, one likely spends most of the time in the terminal. Using a terminal based application makes the workflow more fluent and natural. And by making the shortcuts the same logic as the shell application and text editor, one would be very fast in those applications without ever leaving the keyboard.</li></ul> <p>When it comes to the emails, Mutt/Neomutt is pretty much the only choice of the terminal based Email application.</p> <h2 id="installation"><a href="#installation" class="header-anchor">#</a> Installation</h2> <p>Just like Vim and Neovim, Neomutt is more modern version of Mutt. To install Neomutt, simply use your system's package manager. For example, for Arch based system, simply do:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>pacman <span class="token parameter variable">-S</span> neomutt
+</code></pre></div><h2 id="configuration"><a href="#configuration" class="header-anchor">#</a> Configuration</h2> <p>I kept my Neomutt configuration in <code>~/.config/neomutt/</code>. The entry point is the muttrc file. Below is the folder structure.</p> <div class="language- extra-class"><pre class="language-text"><code>├── accounts
+│   └── yahoo
+├── colors
+├── mailcap
+├── mappings
+├── muttrc
+└── settings
+</code></pre></div><ul><li><strong>muttrc</strong>: This is the entry point of all configuration files, similar to init.vim for VIM configuration. It will simply source the rest of the configuration files.</li> <li><strong>accounts</strong>: You could have multiple email accounts configured in neomutt. The folder hosts account specific configurations such as the corresponding email servers, login credentials, email Folders etc.</li> <li><strong>mailcap</strong>: This file is used to define the applications to use for various attachments in emails. In modern emails, it is not just the plain texts. More often, an email will contain html, pictures, PDFs, etc. The mailcap file will configure what applications to use for dealing with these non-text files contained / attached in emails.</li> <li><strong>mappings</strong>: Customized key mappings for neomutt. While neomutt's default key mappings are already great and straightforward, I would prefer to have a few more keystrokes that would operate in a similar way as VIM does.</li> <li><strong>settings</strong>: General behaviors of neomutt are configured in this file.</li> <li><strong>colors</strong>: And last but not the least, color schemes can be defined for the mail box, email headers, bodies and more.</li></ul> <h2 id="main-configuration-muttrc"><a href="#main-configuration-muttrc" class="header-anchor">#</a> Main Configuration muttrc</h2> <p>A simple entry point muttrc file could look like this:</p> <div class="language-vim extra-class"><pre class="language-vim"><code><span class="token keyword">source</span> ~<span class="token operator">/</span><span class="token operator">.</span>config<span class="token operator">/</span>neomutt<span class="token operator">/</span>settings
+<span class="token keyword">source</span> ~<span class="token operator">/</span><span class="token operator">.</span>config<span class="token operator">/</span>neomutt<span class="token operator">/</span>colors
+<span class="token keyword">source</span> ~<span class="token operator">/</span><span class="token operator">.</span>config<span class="token operator">/</span>neomutt<span class="token operator">/</span>mappings
+</code></pre></div><h2 id="connect-to-an-email-account"><a href="#connect-to-an-email-account" class="header-anchor">#</a> Connect to An Email Account</h2> <p>Depending on the email provider, the way you need to specify your account information is a bitter different. The main things need to be set include:</p> <ul><li><strong>Email servers</strong>: This includes both receiving and sending servers. The common server protocol is IMAP for receiving and SMTP for sending. Below is an example of Yahoo emails server information</li></ul> <div class="language-vim extra-class"><pre class="language-vim"><code><span class="token keyword">set</span> imap_user <span class="token operator">=</span> <span class="token string">&quot;myusername@yahoo.com&quot;</span>
+<span class="token keyword">set</span> folder <span class="token operator">=</span> <span class="token string">&quot;imaps://imap.mail.yahoo.com:993&quot;</span>
+
+<span class="token keyword">set</span> spoolfile <span class="token operator">=</span> <span class="token string">&quot;+INBOX&quot;</span>
+<span class="token keyword">set</span> record <span class="token operator">=</span> <span class="token string">&quot;+Sent&quot;</span>
+<span class="token keyword">set</span> trash <span class="token operator">=</span> <span class="token string">&quot;+Trash&quot;</span>
+<span class="token keyword">set</span> postponed <span class="token operator">=</span> <span class="token string">&quot;+Draft&quot;</span>
+
+<span class="token keyword">set</span> smtp_url <span class="token operator">=</span> <span class="token string">&quot;smtp://myusername@smtp.mail.yahoo.com:587/&quot;</span>
+mailboxes <span class="token operator">=</span>INBOX <span class="token operator">=</span>Sent <span class="token operator">=</span>Trash <span class="token operator">=</span>Draft
+
+</code></pre></div><p>You would also need to supply your email credentials in the setting. Some email provider would require a more secured way to access the mail boxes. For example, Yahoo mail requires to use a randomly generated password for any third party email client. You could specify the password directly in the configuration file. But you could also use the file encryption applications such as <a href="https://gnupg.org/" target="_blank" rel="noopener noreferrer"><strong>gpg</strong><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> to encrypt the password. The way to set your email password is as follows:</p> <div class="language-vim extra-class"><pre class="language-vim"><code>
+<span class="token keyword">set</span> smtp_pass <span class="token operator">=</span> <span class="token string">'mypassword'</span>
+<span class="token keyword">set</span> imap_pass <span class="token operator">=</span> <span class="token string">'mypassword'</span>
+
+</code></pre></div><h2 id="general-behavior-settings"><a href="#general-behavior-settings" class="header-anchor">#</a> General Behavior: settings</h2> <p>For general settings, it is all about personal preference. A few things that you could set as your default includes:</p> <div class="language-vim extra-class"><pre class="language-vim"><code>unset confirmappend      # No additional <span class="token builtin">prompt</span> asking <span class="token keyword">for</span> confirmation
+<span class="token keyword">set</span> <span class="token keyword">quit</span>                 # No additional <span class="token builtin">prompt</span> asking <span class="token keyword">for</span> confirmation 
+unset mark_old           # Only <span class="token keyword">mark</span> <span class="token keyword">read</span><span class="token operator">/</span><span class="token keyword">new</span> 
+<span class="token keyword">set</span> beep_new             # Bell <span class="token keyword">on</span> <span class="token keyword">new</span> mails
+<span class="token keyword">set</span> pipe_decode          # strip headers and eval mimes when piping
+<span class="token keyword">set</span> thorough_search      # strip headers and eval mimes before searching
+</code></pre></div><h2 id="key-mappings-mappings"><a href="#key-mappings-mappings" class="header-anchor">#</a> Key mappings: mappings</h2> <p>I prefer the key mappings to be similar to what I have for VIM.</p> <div class="language-vim extra-class"><pre class="language-vim"><code>
+# General rebindings
+bind attach <span class="token operator">&lt;</span><span class="token keyword">return</span><span class="token operator">&gt;</span> <span class="token keyword">view</span><span class="token operator">-</span>mailcap
+bind attach <span class="token keyword">l</span> <span class="token keyword">view</span><span class="token operator">-</span>mailcap
+bind editor <span class="token operator">&lt;</span>space<span class="token operator">&gt;</span> noop
+bind pager <span class="token keyword">c</span> imap<span class="token operator">-</span>fetch<span class="token operator">-</span>mail
+bind index G <span class="token keyword">last</span><span class="token operator">-</span>entry
+bind index g noop
+bind index gg <span class="token keyword">first</span><span class="token operator">-</span>entry
+bind pager<span class="token punctuation">,</span>attach <span class="token keyword">h</span> <span class="token keyword">exit</span>
+bind pager <span class="token keyword">j</span> <span class="token keyword">next</span><span class="token operator">-</span>line
+bind pager <span class="token keyword">k</span> <span class="token keyword">previous</span><span class="token operator">-</span>line
+bind pager <span class="token keyword">l</span> <span class="token keyword">view</span><span class="token operator">-</span>attachments
+bind index D <span class="token keyword">delete</span><span class="token operator">-</span>message
+bind index U undelete<span class="token operator">-</span>message
+bind index L limit
+bind index <span class="token keyword">h</span> noop
+bind index <span class="token keyword">l</span> <span class="token keyword">display</span><span class="token operator">-</span>message
+bind browser <span class="token keyword">h</span> <span class="token keyword">goto</span><span class="token operator">-</span>parent
+bind browser <span class="token keyword">l</span> select<span class="token operator">-</span>entry
+bind pager<span class="token punctuation">,</span>browser gg <span class="token builtin">top</span><span class="token operator">-</span>page
+bind pager<span class="token punctuation">,</span>browser G bottom<span class="token operator">-</span>page
+bind index<span class="token punctuation">,</span>pager<span class="token punctuation">,</span>browser <span class="token keyword">d</span> half<span class="token operator">-</span>down
+bind index<span class="token punctuation">,</span>pager<span class="token punctuation">,</span>browser <span class="token keyword">u</span> half<span class="token operator">-</span><span class="token keyword">up</span>
+bind index<span class="token punctuation">,</span>pager R group<span class="token operator">-</span>reply
+bind index \<span class="token number">031</span> <span class="token keyword">previous</span><span class="token operator">-</span>undeleted	# Mouse wheel
+bind index \<span class="token number">005</span> <span class="token keyword">next</span><span class="token operator">-</span>undeleted		# Mouse wheel
+bind pager \<span class="token number">031</span> <span class="token keyword">previous</span><span class="token operator">-</span>line		# Mouse wheel
+bind pager \<span class="token number">005</span> <span class="token keyword">next</span><span class="token operator">-</span>line		# Mouse wheel
+bind editor <span class="token operator">&lt;</span>Tab<span class="token operator">&gt;</span> <span class="token builtin">complete</span><span class="token operator">-</span>query
+
+
+# sidebar mappings
+bind index<span class="token punctuation">,</span>pager \Ck sidebar<span class="token operator">-</span><span class="token keyword">prev</span>
+bind index<span class="token punctuation">,</span>pager \Cj sidebar<span class="token operator">-</span><span class="token keyword">next</span>
+bind index<span class="token punctuation">,</span>pager \Co sidebar<span class="token operator">-</span><span class="token keyword">open</span>
+bind index<span class="token punctuation">,</span>pager \Cp sidebar<span class="token operator">-</span><span class="token keyword">prev</span><span class="token operator">-</span><span class="token keyword">new</span>
+bind index<span class="token punctuation">,</span>pager \Cn sidebar<span class="token operator">-</span><span class="token keyword">next</span><span class="token operator">-</span><span class="token keyword">new</span>
+bind index<span class="token punctuation">,</span>pager B sidebar<span class="token operator">-</span>toggle<span class="token operator">-</span>visible
+
+# global index and pager shortcuts
+bind index<span class="token punctuation">,</span>pager @ compose<span class="token operator">-</span><span class="token keyword">to</span><span class="token operator">-</span>sender
+bind index<span class="token punctuation">,</span>pager D purge<span class="token operator">-</span>message
+bind index <span class="token operator">&lt;</span><span class="token keyword">tab</span><span class="token operator">&gt;</span> sync<span class="token operator">-</span>mailbox
+bind index <span class="token operator">&lt;</span>space<span class="token operator">&gt;</span> collapse<span class="token operator">-</span>thread
+
+# Email completion bindings
+bind editor <span class="token operator">&lt;</span>Tab<span class="token operator">&gt;</span> <span class="token builtin">complete</span><span class="token operator">-</span>query
+bind editor ^T <span class="token builtin">complete</span>
+
+# Press A <span class="token keyword">to</span> add contact <span class="token keyword">to</span> Khard address book
+macro index<span class="token punctuation">,</span>pager A \
+    <span class="token string">&quot;&lt;pipe-message&gt;khard add-email&lt;return&gt;&quot;</span> \
+    <span class="token string">&quot;add the sender email address to khard&quot;</span>
+
+### Shortcuts
+macro index<span class="token punctuation">,</span>pager U <span class="token string">&quot;&lt;enter-command&gt;set pipe_decode = yes&lt;enter&gt;&lt;pipe-message&gt;urlview&lt;enter&gt;&lt;enter-command&gt;set pipe_decode = no&lt;enter&gt;&quot;</span><span class="token string">&quot;view URLs&quot;</span>
+
+</code></pre></div><h2 id="color-scheme-colors"><a href="#color-scheme-colors" class="header-anchor">#</a> Color scheme: colors</h2> <p>Color scheme is always the fun part. Below is my color scheme.</p> <div class="language-vim extra-class"><pre class="language-vim"><code>
+# Header colors<span class="token punctuation">:</span>
+color header blue default <span class="token string">&quot;.*&quot;</span>
+color header brightmagenta default <span class="token string">&quot;^(From)&quot;</span>
+color header brightcyan default <span class="token string">&quot;^(Subject)&quot;</span>
+color header brightwhite default <span class="token string">&quot;^(CC|BCC)&quot;</span>
+
+mono bold bold
+mono underline underline
+mono indicator reverse
+mono error bold
+color normal default default
+color indicator brightyellow default # currently selected message<span class="token operator">.</span> default makes bar clear<span class="token punctuation">,</span> disabled arrow <span class="token keyword">to</span> save space<span class="token operator">.</span>
+color sidebar_highlight <span class="token keyword">red</span> default
+color sidebar_divider brightblack black
+color sidebar_flagged <span class="token keyword">red</span> black
+color sidebar_new green black
+color normal brightyellow default
+color error <span class="token keyword">red</span> default
+color tilde black default
+color message cyan default
+color markers <span class="token keyword">red</span> white
+color attachment white default
+color search brightmagenta default
+color status brightyellow black
+color hdrdefault brightgreen default
+color quoted green default
+color quoted1 blue default
+color quoted2 cyan default
+color quoted3 yellow default
+color quoted4 <span class="token keyword">red</span> default
+color quoted5 brightred default
+color signature brightgreen default
+color bold black default
+color underline black default
+color normal default default
+
+color body brightred default <span class="token string">&quot;[\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+&quot;</span> # Email addresses
+color body brightblue default <span class="token string">&quot;(https?|ftp)://[\-\.,/%~_:?&amp;=\#a-zA-Z0-9]+&quot;</span> # URL
+color body green default <span class="token string">&quot;\`[^\`]*\`&quot;</span> # Green text between ` and `
+color body brightblue default <span class="token string">&quot;^# \.*&quot;</span> # Headings <span class="token keyword">as</span> bold blue
+color body brightcyan default <span class="token string">&quot;^## \.*&quot;</span> # Subheadings <span class="token keyword">as</span> bold cyan
+color body brightgreen default <span class="token string">&quot;^### \.*&quot;</span> # Subsubheadings <span class="token keyword">as</span> bold green
+color body yellow default <span class="token string">&quot;^(\t| )*(-|\\*) \.*&quot;</span> # List items <span class="token keyword">as</span> yellow
+color body brightcyan default <span class="token string">&quot;[;:][-o][)/(|]&quot;</span> # emoticons
+color body brightcyan default <span class="token string">&quot;[;:][)(|]&quot;</span> # emoticons
+color body brightcyan default <span class="token string">&quot;[ ][*][^*]*[*][ ]?&quot;</span> # <span class="token builtin">more</span> emoticon<span class="token operator">?</span>
+color body brightcyan default <span class="token string">&quot;[ ]?[*][^*]*[*][ ]&quot;</span> # <span class="token builtin">more</span> emoticon<span class="token operator">?</span>
+color body <span class="token keyword">red</span> default <span class="token string">&quot;(BAD signature)&quot;</span>
+color body cyan default <span class="token string">&quot;(Good signature)&quot;</span>
+color body brightblack default <span class="token string">&quot;^gpg: Good signature .*&quot;</span>
+color body brightyellow default <span class="token string">&quot;^gpg: &quot;</span>
+color body brightyellow <span class="token keyword">red</span> <span class="token string">&quot;^gpg: BAD signature from.*&quot;</span>
+mono body bold <span class="token string">&quot;^gpg: Good signature&quot;</span>
+#mohttps<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>neomutt<span class="token operator">.</span>org<span class="token operator">/</span>code<span class="token operator">/</span>config_vars<span class="token operator">.</span>htmlno body bold <span class="token string">&quot;^gpg: BAD signature from.*&quot;</span>
+color body <span class="token keyword">red</span> default <span class="token string">&quot;([a-z][a-z0-9+-]*://(((([a-z0-9_.!~*'();:&amp;=+$,-]|%[0-9a-f][0-9a-f])*@)?((([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?|[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)(:[0-9]+)?)|([a-z0-9_.!~*'()$,;:@&amp;=+-]|%[0-9a-f][0-9a-f])+)(/([a-z0-9_.!~*'():@&amp;=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&amp;=+$,-]|%[0-9a-f][0-9a-f])*)*(/([a-z0-9_.!~*'():@&amp;=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&amp;=+$,-]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([a-z0-9_.!~*'();/?:@&amp;=+$,-]|%[0-9a-f][0-9a-f])*)?(#([a-z0-9_.!~*'();/?:@&amp;=+$,-]|%[0-9a-f][0-9a-f])*)?|(www|ftp)\\.(([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?(:[0-9]+)?(/([-a-z0-9_.!~*'():@&amp;=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&amp;=+$,]|%[0-9a-f][0-9a-f])*)*(/([-a-z0-9_.!~*'():@&amp;=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&amp;=+$,]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([-a-z0-9_.!~*'();/?:@&amp;=+$,]|%[0-9a-f][0-9a-f])*)?(#([-a-z0-9_.!~*'();/?:@&amp;=+$,]|%[0-9a-f][0-9a-f])*)?)[^].,:;!)? \t\r\n&lt;&gt;\&quot;]&quot;</span>
+
+# Default index colors<span class="token punctuation">:</span>
+color index yellow default <span class="token string">'.*'</span>
+color index_author brightmagenta  default <span class="token string">'.*'</span>
+color index_number blue default
+color index_subject cyan default <span class="token string">'.*'</span>
+
+# For <span class="token keyword">new</span> mail<span class="token punctuation">:</span>
+color index brightyellow default <span class="token string">&quot;~N&quot;</span>
+color index_author brightred default <span class="token string">&quot;~N&quot;</span>
+color index_subject brightcyan default <span class="token string">&quot;~N&quot;</span>
+
+color progress black cyan
+
+</code></pre></div><h2 id="last-words"><a href="#last-words" class="header-anchor">#</a> Last Words</h2> <p>Neomutt can be a bit tedious to configure. Fortunately, there are a lot of people out there willing to share their dot files. For example, my configurations are largely based on Gideon Wolfe's Configuration <a href="https://gideonwolfe.com/posts/workflow/neomutt/intro/" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>Youtuber Luke Smith also made a wizard for neomutt which can be found here: <a href="https://github.com/LukeSmithxyz/mutt-wizard" target="_blank" rel="noopener noreferrer">LukeSmithxyz/mutt-wizard<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2/19/2022, 5:44:51 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#background" class="sidebar-link reco-side-background" data-v-70334359>Background</a></li><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#installation" class="sidebar-link reco-side-installation" data-v-70334359>Installation</a></li><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#configuration" class="sidebar-link reco-side-configuration" data-v-70334359>Configuration</a></li><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#main-configuration-muttrc" class="sidebar-link reco-side-main-configuration-muttrc" data-v-70334359>Main Configuration muttrc</a></li><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#connect-to-an-email-account" class="sidebar-link reco-side-connect-to-an-email-account" data-v-70334359>Connect to An Email Account</a></li><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#general-behavior-settings" class="sidebar-link reco-side-general-behavior-settings" data-v-70334359>General Behavior: settings</a></li><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#key-mappings-mappings" class="sidebar-link reco-side-key-mappings-mappings" data-v-70334359>Key mappings: mappings</a></li><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#color-scheme-colors" class="sidebar-link reco-side-color-scheme-colors" data-v-70334359>Color scheme: colors</a></li><li class="level-2" data-v-70334359><a href="/views/2022-02-19-Configure-Neomutt.html#last-words" class="sidebar-link reco-side-last-words" data-v-70334359>Last Words</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.c2013288.js" defer></script><script src="/assets/js/3.89e8bd5b.js" defer></script><script src="/assets/js/1.6fc59a91.js" defer></script><script src="/assets/js/25.054561ac.js" defer></script>
+  </body>
+</html>

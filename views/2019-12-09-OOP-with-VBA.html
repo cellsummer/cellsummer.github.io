@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Object Oriented Programming with VBA | Wenjing&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Welcome to my Vuepress Blog Site! Check out my Github for the source code.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.4207f5fc.css" as="style"><link rel="preload" href="/assets/js/app.c2013288.js" as="script"><link rel="preload" href="/assets/js/3.89e8bd5b.js" as="script"><link rel="preload" href="/assets/js/1.6fc59a91.js" as="script"><link rel="preload" href="/assets/js/18.5506ab3a.js" as="script"><link rel="prefetch" href="/assets/js/10.1fe5794d.js"><link rel="prefetch" href="/assets/js/11.d60d5932.js"><link rel="prefetch" href="/assets/js/12.93e37cab.js"><link rel="prefetch" href="/assets/js/13.a8f8b45b.js"><link rel="prefetch" href="/assets/js/14.0762bf92.js"><link rel="prefetch" href="/assets/js/15.86aed01d.js"><link rel="prefetch" href="/assets/js/16.0cf52093.js"><link rel="prefetch" href="/assets/js/17.f15cd292.js"><link rel="prefetch" href="/assets/js/19.c031ce80.js"><link rel="prefetch" href="/assets/js/20.4ca8ce32.js"><link rel="prefetch" href="/assets/js/21.9e85f937.js"><link rel="prefetch" href="/assets/js/22.fbe1ca34.js"><link rel="prefetch" href="/assets/js/23.c0ba242b.js"><link rel="prefetch" href="/assets/js/24.39087986.js"><link rel="prefetch" href="/assets/js/25.054561ac.js"><link rel="prefetch" href="/assets/js/26.610a6a80.js"><link rel="prefetch" href="/assets/js/27.c4bffb1f.js"><link rel="prefetch" href="/assets/js/28.be3e0761.js"><link rel="prefetch" href="/assets/js/29.00e69056.js"><link rel="prefetch" href="/assets/js/4.471faa12.js"><link rel="prefetch" href="/assets/js/5.d887c88f.js"><link rel="prefetch" href="/assets/js/6.0d4a3552.js"><link rel="prefetch" href="/assets/js/7.c5fc8b99.js"><link rel="prefetch" href="/assets/js/8.8fbdee77.js"><link rel="prefetch" href="/assets/js/9.9eff6f5e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4207f5fc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Wenjing's Blog</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>Welcome to my Vuepress Blog Site! Check out my Github for the source code.</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Wenjing Fang</span>
+            
+          <!---->
+          2023
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Wenjing's Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Notes/" class="nav-link"><i class="undefined"></i>
+  Notes
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Travel/" class="nav-link"><i class="undefined"></i>
+  Travel
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Life/" class="nav-link"><i class="undefined"></i>
+  Life
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="mailto: fang.wenjing@yahoo.com" class="nav-link external"><i class="iconfont reco-mail"></i>
+  Email
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/cellsummer/vuepress-deploy" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/image/me.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    Wenjing Fang
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>15</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>23</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Notes/" class="nav-link"><i class="undefined"></i>
+  Notes
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Travel/" class="nav-link"><i class="undefined"></i>
+  Travel
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Life/" class="nav-link"><i class="undefined"></i>
+  Life
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="mailto: fang.wenjing@yahoo.com" class="nav-link external"><i class="iconfont reco-mail"></i>
+  Email
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/cellsummer/vuepress-deploy" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-github"></i>
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Object Oriented Programming with VBA</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Wenjing Fang</span>
+            
+          <!---->
+          2023
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">Object Oriented Programming with VBA</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>Wenjing Fang</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>12/8/2019</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>VBA</span><span class="tag-item" data-v-1ff7123e>OOP</span><span class="tag-item" data-v-1ff7123e>Programming</span></i></div></div> <div class="theme-reco-content content__default"><div class="custom-block tip"><p class="title"></p><p>This post demonstrates how to create a simple class in VBA and to use it in the regular modules. Classes allows to package different properties and methods into a reusable “container”. It is extremely useful when the program constantly calling these methods/properties. This example will create a ADO database class which allows to connect to a MSSQL database. Consider this as an extension to the default ADODB class.</p></div> <h2 id="prerequisite"><a href="#prerequisite" class="header-anchor">#</a> Prerequisite</h2> <p>The following references must be checked in VBA so that the example can be ran without errors.</p> <ul><li>Microsoft ActiveX Data Objects Recordset 2.x Library</li> <li>Microsoft ActiveX Data Objects 2.0 Library</li> <li>Microsoft ADO Ext. 2.x for DLL and Security</li></ul> <h2 id="declare-the-variables"><a href="#declare-the-variables" class="header-anchor">#</a> Declare the variables</h2> <p>you gonna use inside the class module. Since we only want these variables to be recognized within this class. We will declare them to be Private.</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Option</span> Explicit
+<span class="token keyword">Private</span> conn <span class="token keyword">as</span> ADODB<span class="token punctuation">.</span>connection
+<span class="token keyword">Private</span> dbName <span class="token keyword">as</span> <span class="token keyword">String</span>
+</code></pre></div><h2 id="get-let"><a href="#get-let" class="header-anchor">#</a> GET/LET</h2> <p>this is VBA’s way of reading (GET) and writing (LET) class properties.</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token comment">'write and read database name property</span>
+<span class="token keyword">Public</span> <span class="token keyword">Property</span> <span class="token keyword">Get</span> DataBaseName<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">As</span> <span class="token keyword">String</span>
+DataBaseName <span class="token operator">=</span> dbName
+<span class="token keyword">End</span> <span class="token keyword">Property</span>
+
+<span class="token keyword">Public</span> <span class="token keyword">Property</span> <span class="token keyword">Let</span> DataBaseName<span class="token punctuation">(</span>value <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">)</span>
+dbName <span class="token operator">=</span> value
+<span class="token keyword">End</span> <span class="token keyword">Property</span>
+
+<span class="token comment">'read database connection string</span>
+<span class="token keyword">Public</span> <span class="token keyword">Property</span> <span class="token keyword">Get</span> ConnectionString<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ConnectionString <span class="token operator">=</span> conn<span class="token punctuation">.</span>ConnectionString
+<span class="token keyword">End</span> <span class="token keyword">Property</span>
+</code></pre></div><h2 id="constructors"><a href="#constructors" class="header-anchor">#</a> Constructors</h2> <p>Every class will need (at least) one initialization procedure. This happens when you declare a class object in the regular module (a.k.a. main program).
+The first way of initializing the class (using connection string directly):</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Public</span> <span class="token keyword">Sub</span> Initialize<span class="token punctuation">(</span><span class="token keyword">ByRef</span> connectionStr <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">)</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token comment">'This sub will open a connection specified by a connection string</span>
+<span class="token comment">'connectionStr: connection string</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token comment">' Open connection to database using connectionStr as connection string</span>
+<span class="token keyword">Set</span> conn <span class="token operator">=</span> <span class="token keyword">New</span> ADODB<span class="token punctuation">.</span>Connection
+<span class="token keyword">With</span> conn
+<span class="token keyword">On</span> <span class="token keyword">Error</span> <span class="token keyword">Resume</span> <span class="token keyword">Next</span>
+<span class="token punctuation">.</span>ConnectionString <span class="token operator">=</span> connectionStr
+<span class="token punctuation">.</span>ConnectionTimeout <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">' indefinite wait...</span>
+<span class="token punctuation">.</span>Open
+<span class="token keyword">End</span> <span class="token keyword">With</span>
+<span class="token keyword">End</span> <span class="token keyword">Sub</span>
+</code></pre></div><p>The second way of initializing the class (using server name, catalog/database name, and credentials).</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Public</span> <span class="token keyword">Sub</span> InitializeSQLDB<span class="token punctuation">(</span>dataSource <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">,</span> catalog <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">,</span> <span class="token keyword">Optional</span> userID <span class="token keyword">As</span> <span class="token keyword">String</span> <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token comment">'This sub initializes the connection to an SQL Server DB</span>
+
+<span class="token comment">'dataSource: datasource i.e. server name</span>
+<span class="token comment">'catalog: database name</span>
+<span class="token comment">'userID: user ID</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token keyword">Dim</span> connStr <span class="token keyword">As</span> <span class="token keyword">String</span>
+<span class="token keyword">Dim</span> pwd <span class="token keyword">As</span> <span class="token keyword">String</span>
+<span class="token comment">'Create connection string</span>
+<span class="token keyword">If</span> Len<span class="token punctuation">(</span>userID<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">0</span> <span class="token keyword">Then</span>
+<span class="token comment">''SQLNCLI11' windows credentials</span>
+connStr <span class="token operator">=</span> <span class="token string">&quot;Provider='SQLNCLI11';Data Source= &quot;</span> <span class="token operator">&amp;</span> dataSource <span class="token operator">&amp;</span> <span class="token string">&quot;;&quot;</span> <span class="token operator">&amp;</span> <span class="token string">&quot;Initial Catalog=&quot;</span> <span class="token operator">&amp;</span> catalog <span class="token operator">&amp;</span> <span class="token string">&quot;;&quot;</span> <span class="token operator">_</span>
+<span class="token operator">&amp;</span> <span class="token string">&quot;Integrated Security= 'SSPI';&quot;</span> <span class="token operator">&amp;</span> <span class="token string">&quot;Persist Security Info=False;&quot;</span> <span class="token operator">&amp;</span> <span class="token string">&quot;QuotedID=No&quot;</span>
+<span class="token keyword">Else</span>
+<span class="token comment">'FrmPassword.Show</span>
+pwd <span class="token operator">=</span> InputBox<span class="token punctuation">(</span><span class="token string">&quot;Password?&quot;</span><span class="token punctuation">)</span> <span class="token comment">'FrmPassword.Password 'Utils.GetInput(&quot;Enter password :&quot;)</span>
+connStr <span class="token operator">=</span> <span class="token string">&quot;Provider='SQLNCLI11';Data Source= &quot;</span> <span class="token operator">&amp;</span> dataSource <span class="token operator">&amp;</span> <span class="token string">&quot;;&quot;</span> <span class="token operator">&amp;</span> <span class="token string">&quot;Initial Catalog=&quot;</span> <span class="token operator">&amp;</span> catalog <span class="token operator">&amp;</span> <span class="token string">&quot;;&quot;</span> <span class="token operator">_</span>
+<span class="token operator">&amp;</span> <span class="token string">&quot;User ID=&quot;</span> <span class="token operator">&amp;</span> userID <span class="token operator">&amp;</span> <span class="token string">&quot;;&quot;</span> <span class="token operator">&amp;</span> <span class="token string">&quot;Password=&quot;</span> <span class="token operator">&amp;</span> pwd <span class="token operator">&amp;</span> <span class="token string">&quot;;&quot;</span>
+<span class="token keyword">End</span> <span class="token keyword">If</span>
+<span class="token keyword">With</span> <span class="token keyword">Me</span>
+<span class="token punctuation">.</span>DataBaseName <span class="token operator">=</span> catalog <span class="token comment">' Set property</span>
+<span class="token keyword">End</span> <span class="token keyword">With</span>
+<span class="token keyword">Me</span><span class="token punctuation">.</span>Initialize connStr
+<span class="token keyword">End</span> <span class="token keyword">Sub</span>
+</code></pre></div><h2 id="now-write-some-methods-functions"><a href="#now-write-some-methods-functions" class="header-anchor">#</a> Now, write some methods/functions</h2> <p>you want to do inside the class.
+The very first thing I want this class to do is to execute an SQL query.</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Public</span> <span class="token keyword">Sub</span> ExecuteSQLInDB<span class="token punctuation">(</span><span class="token keyword">ByRef</span> sqlStr <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">)</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token comment">'This sub will Execute SQL in sqlStr</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token keyword">With</span> conn
+<span class="token punctuation">.</span>Execute sqlStr
+<span class="token keyword">End</span> <span class="token keyword">With</span>
+<span class="token keyword">End</span> <span class="token keyword">Sub</span>
+</code></pre></div><p>Next, I want to have a way to clear out the records of an existing table.</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Public</span> <span class="token keyword">Sub</span> ClearTable<span class="token punctuation">(</span>tblName <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">)</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token comment">'This function will clear content of tblName in DB</span>
+
+<span class="token comment">'tblName: name of table to cleared</span>
+<span class="token comment">' adoConn: connection to database</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+
+<span class="token keyword">Dim</span> sqlStr <span class="token keyword">As</span> <span class="token keyword">String</span>
+sqlStr <span class="token operator">=</span> <span class="token string">&quot;DELETE FROM [&quot;</span> <span class="token operator">&amp;</span> tblName <span class="token operator">&amp;</span> <span class="token string">&quot;]&quot;</span>
+<span class="token keyword">On</span> <span class="token keyword">Error</span> <span class="token keyword">Resume</span> <span class="token keyword">Next</span>
+Application<span class="token punctuation">.</span>StatusBar <span class="token operator">=</span> <span class="token string">&quot;Clearing Table [&quot;</span> <span class="token operator">&amp;</span> tblName <span class="token operator">&amp;</span> <span class="token string">&quot;]&quot;</span>
+<span class="token keyword">Me</span><span class="token punctuation">.</span>ExecuteSQLInDB sqlStr
+<span class="token keyword">If</span> Err<span class="token punctuation">.</span>Number <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">Then</span>
+Debug<span class="token punctuation">.</span>Print tblName <span class="token operator">&amp;</span> <span class="token string">&quot; No Clearing Took Place... Err description&quot;</span> <span class="token operator">+</span> Err<span class="token punctuation">.</span>Description
+<span class="token keyword">End</span> <span class="token keyword">If</span>
+Application<span class="token punctuation">.</span>StatusBar <span class="token operator">=</span> <span class="token boolean">False</span>
+<span class="token keyword">End</span> <span class="token keyword">Sub</span>
+</code></pre></div><p><strong>Finally</strong>, I want to have a function to clear out all tables in the database. To do this in a fancier way, we will create a generic “ApplyAll” function as we probablly want to do other similar “apply for all” operations in the future.</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Public</span> <span class="token keyword">Function</span> ApplyMethodToAllTablesInDB<span class="token punctuation">(</span>funcName <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">)</span> <span class="token keyword">As</span> <span class="token keyword">Integer</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token comment">' This function is a dispatcher of function/method called funcName on all tables in the database</span>
+<span class="token comment">' funcName should have a parameter which is a table name</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token keyword">Dim</span> recSet <span class="token keyword">As</span> ADODB<span class="token punctuation">.</span>Recordset
+<span class="token keyword">Dim</span> tblName <span class="token keyword">As</span> <span class="token keyword">String</span>
+<span class="token keyword">Dim</span> tblNum <span class="token keyword">As</span> <span class="token keyword">Integer</span>
+<span class="token keyword">Set</span> recSet <span class="token operator">=</span> conn<span class="token punctuation">.</span>OpenSchema<span class="token punctuation">(</span>adSchemaTables<span class="token punctuation">,</span> Array<span class="token punctuation">(</span>Empty<span class="token punctuation">,</span> Empty<span class="token punctuation">,</span> Empty<span class="token punctuation">,</span> <span class="token string">&quot;TABLE&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+tblNum <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">Do</span> <span class="token keyword">While</span> <span class="token keyword">Not</span> recSet<span class="token punctuation">.</span>EOF
+tblName <span class="token operator">=</span> recSet<span class="token punctuation">.</span>Fields<span class="token punctuation">(</span><span class="token string">&quot;TABLE_NAME&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value
+CallByName <span class="token keyword">Me</span><span class="token punctuation">,</span> funcName<span class="token punctuation">,</span> VbMethod<span class="token punctuation">,</span> tblName
+recSet<span class="token punctuation">.</span>MoveNext
+tblNum <span class="token operator">=</span> tblNum <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token keyword">Loop</span>
+ApplyMethodToAllTablesInDB <span class="token operator">=</span> tblNum
+<span class="token keyword">Set</span> recSet <span class="token operator">=</span> <span class="token boolean">Nothing</span>
+<span class="token keyword">End</span> <span class="token keyword">Function</span>
+
+<span class="token keyword">Public</span> <span class="token keyword">Function</span> ClearAllTables<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">As</span> <span class="token keyword">Integer</span>
+<span class="token comment">'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token comment">'This function clears all tables in DB of its contents</span>
+<span class="token comment">'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+ClearAllTables <span class="token operator">=</span> <span class="token keyword">Me</span><span class="token punctuation">.</span>ApplyMethodToAllTablesInDB<span class="token punctuation">(</span><span class="token string">&quot;ClearTable&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">End</span> <span class="token keyword">Function</span>
+</code></pre></div><h2 id="last-but-not-the-least-we-want-to-clean-up-things"><a href="#last-but-not-the-least-we-want-to-clean-up-things" class="header-anchor">#</a> Last but not the least, we want to clean up things</h2> <p>Especially when we are dealing with the SQL objects that could explode the computer’s memory if we don’t release them properly.</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Friend</span> <span class="token keyword">Sub</span> Class_Terminate<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token comment">' Terminates class. Important in a class like this since connection object</span>
+<span class="token comment">' needs to be released to avoid tying up memory</span>
+<span class="token comment">''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</span>
+<span class="token keyword">If</span> <span class="token keyword">Not</span> conn <span class="token keyword">Is</span> <span class="token boolean">Nothing</span> <span class="token keyword">Then</span> <span class="token comment">' This check important as invoking methods on a null object will cause errors.</span>
+<span class="token keyword">If</span> conn<span class="token punctuation">.</span>State <span class="token operator">=</span> adStateOpen <span class="token keyword">Then</span>
+conn<span class="token punctuation">.</span>Close
+<span class="token keyword">End</span> <span class="token keyword">If</span>
+<span class="token keyword">End</span> <span class="token keyword">If</span>
+<span class="token keyword">Set</span> conn <span class="token operator">=</span> <span class="token boolean">Nothing</span>
+<span class="token keyword">End</span> <span class="token keyword">Sub</span>
+</code></pre></div><p>The class is pretty much completed. Now let’s try it out in our regular modules (main program).</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Sub</span> Main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">Dim</span> objSQL <span class="token keyword">As</span> clsMSSQL
+<span class="token keyword">Set</span> objSQL <span class="token operator">=</span> <span class="token keyword">New</span> clsMSSQL
+objSQL<span class="token punctuation">.</span>InitializeSQLDB <span class="token string">&quot;(local)&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Demo_Db&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;sa&quot;</span>
+MsgBox <span class="token string">&quot;Database &quot;</span> <span class="token operator">&amp;</span> objSQL<span class="token punctuation">.</span>DataBaseName <span class="token operator">&amp;</span> <span class="token string">&quot; is connected successfully!&quot;</span>
+objSQL<span class="token punctuation">.</span>ClearAllTables
+MsgBox <span class="token string">&quot;Database tables are cleared out!&quot;</span>
+<span class="token keyword">Set</span> objSQL <span class="token operator">=</span> <span class="token boolean">Nothing</span>
+<span class="token keyword">End</span> <span class="token keyword">Sub</span>
+</code></pre></div><p>Yay!</p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2/18/2022, 9:52:16 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/views/2019-12-09-OOP-with-VBA.html#prerequisite" class="sidebar-link reco-side-prerequisite" data-v-70334359>Prerequisite</a></li><li class="level-2" data-v-70334359><a href="/views/2019-12-09-OOP-with-VBA.html#declare-the-variables" class="sidebar-link reco-side-declare-the-variables" data-v-70334359>Declare the variables</a></li><li class="level-2" data-v-70334359><a href="/views/2019-12-09-OOP-with-VBA.html#get-let" class="sidebar-link reco-side-get-let" data-v-70334359>GET/LET</a></li><li class="level-2" data-v-70334359><a href="/views/2019-12-09-OOP-with-VBA.html#constructors" class="sidebar-link reco-side-constructors" data-v-70334359>Constructors</a></li><li class="level-2" data-v-70334359><a href="/views/2019-12-09-OOP-with-VBA.html#now-write-some-methods-functions" class="sidebar-link reco-side-now-write-some-methods-functions" data-v-70334359>Now, write some methods/functions</a></li><li class="level-2" data-v-70334359><a href="/views/2019-12-09-OOP-with-VBA.html#last-but-not-the-least-we-want-to-clean-up-things" class="sidebar-link reco-side-last-but-not-the-least-we-want-to-clean-up-things" data-v-70334359>Last but not the least, we want to clean up things</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.c2013288.js" defer></script><script src="/assets/js/3.89e8bd5b.js" defer></script><script src="/assets/js/1.6fc59a91.js" defer></script><script src="/assets/js/18.5506ab3a.js" defer></script>
+  </body>
+</html>
